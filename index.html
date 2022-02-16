@@ -17,31 +17,25 @@
       </nav>
     </header>
     <section>
-      <div class="main-content">
-        <img
-          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-          alt="Google Logo"
-        />
-        <form action="https://www.google.com/search">
-          <div>
-            <input type="text" name="q" />
-          </div>
-          <div>
-            <input
-              type="submit"
-              name="btnK"
-              value="Google Search"
-              class="button"
-            />
-            <input
-              type="submit"
-              name="btnI"
-              value="I'm feeling lucky"
-              class="button"
-            />
-          </div>
-        </form>
-      </div>
+      <img
+        class="google-logo"
+        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        alt="Google Logo"
+      />
+      <form class="form-container" action="https://www.google.com/search">
+        <div class="search-box">
+          <img
+            class="magnifying-glass"
+            src="/images/magnifying-glass.png"
+            alt="Magnifying Glass Icon"
+          />
+          <input class="search-input" type="text" name="q" />
+        </div>
+        <div class="search-button-container">
+          <input type="submit" name="btnK" value="Google Search" />
+          <input type="submit" name="btnI" value="I'm feeling lucky" />
+        </div>
+      </form>
     </section>
   </body>
 </html>

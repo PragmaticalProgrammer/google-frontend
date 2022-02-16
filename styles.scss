@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 nav {
@@ -14,7 +15,10 @@ nav {
     padding-top: 15px;
 
     li {
-      padding: 0 8px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 24px;
+      padding-right: 20px;
     }
 
     a {
@@ -24,5 +28,72 @@ nav {
     a:hover {
       text-decoration: underline;
     }
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 220px;
+}
+
+.form-container {
+  width: 100%;
+  height: auto;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  height: 45px;
+  border: 1px solid rgb(212, 210, 210);
+  border-radius: 25px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.search-box:hover {
+  box-shadow: 0 0 10px 0 gainsboro;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.google-logo {
+  max-width: 272px;
+  margin-bottom: 22px;
+}
+
+.search-button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+
+  input {
+    color: #3c4043;
+
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 0 16px;
+    border-radius: 4px;
+    border: none;
+    width: 139px;
+    height: 36px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+
+  input:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
   }
 }
