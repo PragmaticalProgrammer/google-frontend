@@ -90,7 +90,6 @@ section {
 
 .google-logo {
   width: 272px;
-  margin-bottom: 22px;
 }
 
 .search-button-container {
@@ -124,5 +123,20 @@ section {
   background-color: #f8f9fa;
   border: 1px solid #dadce0;
   color: #202124;
+}
+
+.logo-div {
+  margin-bottom: 22px;
+}
+
+.logo-div p {
+  color: #4285f4;
+  font-size: 16px;
+  margin: -20px 0 0 215px;
+}
+
+.blue-magnifying-glass {
+  height: 17px;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

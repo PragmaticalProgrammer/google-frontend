@@ -5,6 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/advanced.html">Advanced</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="logo-div">
+        <img
+          class="google-logo"
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          alt="Google Logo"
+        />
+        <p class=".images-text">Images</p>
+      </div>
+
+      <form class="form-container" action="https://www.google.com/search">
+        <div class="search-box">
+          <img
+            class="magnifying-glass"
+            src="/images/magnifying-glass.png"
+            alt="Magnifying Glass Icon"
+          />
+          <input class="search-input" type="text" name="q" />
+          <input type="hidden" name="tbm" value="isch" />
+          <input
+            class="blue-magnifying-glass"
+            type="image"
+            src="/images/blue-magnifying-glass.png"
+            alt="Blue Magnifying Glass Icon"
+          />
+        </div>
+      </form>
+    </section>
+  </body>
 </html>

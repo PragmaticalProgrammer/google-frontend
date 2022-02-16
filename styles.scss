@@ -52,10 +52,10 @@ section {
   border-radius: 25px;
   overflow: hidden;
   margin: auto;
-}
 
-.search-box:hover {
-  box-shadow: 0 0 10px 0 gainsboro;
+  &:hover {
+    box-shadow: 0 0 10px 0 gainsboro;
+  }
 }
 
 .search-input {
@@ -66,7 +66,6 @@ section {
 
 .google-logo {
   width: 272px;
-  margin-bottom: 22px;
 }
 
 .search-button-container {
@@ -88,12 +87,26 @@ section {
     height: 36px;
     margin-right: 16px;
     cursor: pointer;
-  }
 
-  input:hover {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    background-color: #f8f9fa;
-    border: 1px solid #dadce0;
-    color: #202124;
+    &:hover {
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      background-color: #f8f9fa;
+      border: 1px solid #dadce0;
+      color: #202124;
+    }
   }
+}
+
+.logo-div {
+  margin-bottom: 22px;
+  p {
+    color: #4285f4;
+    font-size: 16px;
+    margin: -20px 0 0 215px;
+  }
+}
+
+.blue-magnifying-glass {
+  height: 17px;
+  margin-right: 20px;
 }
