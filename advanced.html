@@ -21,40 +21,39 @@
         <label>Advanced Search</label>
       </div>
       <div class="screen-bar"></div>
-      <form class="grid-container" action="">
+      <form class="grid-container" action="https://google.com/search" name="f">
         <span class="grid-item-1">Find pages with...</span>
         <span class="empty-grid-item"></span>
         <span class="grid-item-2"> To do this in the search box</span>
         <label class="left-sidebar-label" for="">all these words:</label>
-        <input class="advanced-search" type="text" />
+        <input class="advanced-search" type="text" name="as_q" />
         <span class="right-sidebar-label"
           >Type the important words:
           <div>tricolor rat terrier</div>
         </span>
-        <label class="left-sidebar-label" for=""
-          >this exact word or phrase:</label
-        >
-        <input class="advanced-search" type="text" />
+        <label class="left-sidebar-label">this exact word or phrase:</label>
+        <input class="advanced-search" type="text" name="as_epq" />
         <span class="right-sidebar-label"
           >Put exact words in quotes:
           <div>"rat terrier"</div>
         </span>
-        <label class="left-sidebar-label" for="">any of these words:</label>
-        <input class="advanced-search" type="text" name="" id="" />
+        <label class="left-sidebar-label">any of these words:</label>
+        <input class="advanced-search" type="text" name="as_oq" />
         <span class="right-sidebar-label"
           >Type
           <div>OR</div>
           between all the words you want:
           <div>miniature OR standard</div>
         </span>
-        <label class="left-sidebar-label" for="">none of these words:</label>
-        <input class="advanced-search" type="text" name="" id="" />
+        <label class="left-sidebar-label">none of these words:</label>
+        <input class="advanced-search" type="text" name="as_eq" />
         <span class="right-sidebar-label">
           Put a minus sign just before words you don't want:
           <div>-rodent, -"Jack Russell"</div>
         </span>
         <span></span>
-        <input class="advanced-button" type="button" value="Advanced Search" />
+        <input class="advanced-button" type="submit" value="Advanced Search" />
+        <span></span>
       </form>
     </section>
   </body>

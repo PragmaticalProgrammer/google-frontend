@@ -161,10 +161,10 @@ nav ul a:hover {
   padding: 45px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 162px 572px 330px;
-      grid-template-columns: 162px 572px 330px;
-  -ms-grid-rows: 29px 29px 29px 29px 29px;
-      grid-template-rows: 29px 29px 29px 29px 29px;
+  -ms-grid-columns: 162px minmax(169px, 572px) 330px;
+      grid-template-columns: 162px minmax(169px, 572px) 330px;
+  -ms-grid-rows: 29px 29px 29px 29px 29px 29px;
+      grid-template-rows: 29px 29px 29px 29px 29px 29px;
   grid-column-gap: 25px;
   grid-row-gap: 14px;
 }
@@ -217,13 +217,27 @@ nav ul a:hover {
   font-weight: 700;
   width: 124px;
   height: 30px;
-  margin-left: 449px;
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .advanced-button:hover {
   background-image: -moz-linear-gradient(top, #4d90fe, #357ae8);
+}
+
+@media screen and (max-width: 650px) {
+  .grid-item-2,
+  .right-sidebar-label {
+    display: none;
+  }
+  .grid-container {
+    -ms-grid-columns: 162px 169px;
+        grid-template-columns: 162px 169px;
+    -ms-grid-rows: 29px 29px 29px 29px 29px 29px;
+        grid-template-rows: 29px 29px 29px 29px 29px 29px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
